@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify Ad Skipper Pro</title>
+  <link rel="stylesheet" href="popup.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="card">
+    <div class="header">
+      <div class="logo-container">
+        <svg class="logo-icon" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm4.586 14.424c-.18.295-.565.387-.86.207-2.377-1.454-5.37-1.783-8.894-.982-.336.076-.67-.135-.746-.472-.076-.336.135-.67.472-.746 3.855-.88 7.15-.506 9.822 1.13.295.18.387.566.207.86zm1.223-2.72c-.226.367-.707.487-1.074.26-2.72-1.672-6.87-2.157-10.076-1.182-.413.127-.848-.104-.975-.517-.127-.413.104-.848.517-.975 3.666-1.112 8.232-.57 11.348 1.347.367.227.487.708.26 1.074zm.107-2.825C14.394 8.717 8.564 8.524 5.18 9.55c-.53.16-1.09-.14-1.25-.67-.16-.53.14-1.09.67-1.25 3.882-1.178 10.32-.953 14.39 1.464.477.284.633.9.35 1.378-.284.477-.9.633-1.378.35z"/>
+        </svg>
+        <h1>Spotify Ad Skipper Pro</h1>
+      </div>
+      <div class="status-indicator active" id="statusIndicator">
+        <span class="pulse"></span>
+        <span class="status-text">Active</span>
+      </div>
+    </div>
+
+    <div class="stats-panel">
+      <div class="stats-card">
+        <div class="stats-val" id="adsSkippedVal">0</div>
+        <div class="stats-label">Ads Skipped & Muted</div>
+      </div>
+    </div>
+
+    <div class="actions">
+      <button id="resetBtn" class="secondary-btn">
+        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M23 4v6h-6M1 20v-6h6"/>
+          <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/>
+        </svg>
+        Reset Count
+      </button>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
